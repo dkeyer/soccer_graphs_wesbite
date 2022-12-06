@@ -1,4 +1,3 @@
-import React from "react";
 import './About.css';
 import headshot from "./davy.JPG"
 import { FaGithub, FaLinkedin } from "react-icons/fa";
