@@ -6,3 +6,27 @@ img {
 p{
     font-family: Lato;
 }
+
+.social-icons {
+display: flex;
+justify-content: space-between;
+max-width: 400px;
+  margin: 0 auto;
+  padding: 10px 0;}
+
+.pic-with-links {
+    justify-content: space-between;
+}
+
+.icon {
+    font-size: 30px;
+}
+
+.icon:hover {
+    transform: scale(1.2); 
+    transition: 0.2s;
+}
+
+.icons {
+    justify-content: space-between;
+}
