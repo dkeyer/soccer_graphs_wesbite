@@ -7,7 +7,8 @@ export default function Navbar() {
         Sports Graphs
       </Link>
       <ul>
-        <CustomLink to="/viz">Visualizations</CustomLink>
+        <CustomLink to="/epl">Football</CustomLink>
+        <CustomLink to="/nba">NBA</CustomLink>
         <CustomLink to="/about">About</CustomLink>
         <CustomLink to="/contact">Contact</CustomLink>
 
