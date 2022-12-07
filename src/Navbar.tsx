@@ -1,4 +1,21 @@
-import { Link, useMatch, useResolvedPath } from "react-router-dom"
+import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import { Dropdown } from "./Dropdown";
+import "./Navbar.css";
+
+const submenuItems = [
+  {
+    linkName: "EPL",
+    to: "/epl",
+  },
+  {
+    linkName: "Laliga",
+    to: "/laliga",
+  },
+  {
+    linkName: "Bundesliga",
+    to: "/bundesliga",
+  },
+];
 
 export default function Navbar() {
   return (
@@ -6,20 +23,29 @@ export default function Navbar() {
       <Link to="/" className="site-title">
         Sports Graphs
       </Link>
-      <ul>
-        <CustomLink to="/epl">Football</CustomLink>
+      <ul className="navbar-links">
+        <div className="football">
+          <li className="football-link">Football</li>
+          <Dropdown className="football-dropdown" submenus={submenuItems} />
+        </div>
         <CustomLink to="/nba">NBA</CustomLink>
         <CustomLink to="/about">About</CustomLink>
         <CustomLink to="/contact">Contact</CustomLink>
-
       </ul>
     </nav>
-  )
+  );
 }
 
-function CustomLink({ to, children, ...props }: { to: string; children: string }) {
-  const resolvedPath = useResolvedPath(to)
-  const isActive = useMatch({ path: resolvedPath.pathname, end: true })
+function CustomLink({
+  to,
+  children,
+  ...props
+}: {
+  to: string;
+  children: string;
+}) {
+  const resolvedPath = useResolvedPath(to);
+  const isActive = useMatch({ path: resolvedPath.pathname, end: true });
 
   return (
     <li className={isActive ? "active" : ""}>
@@ -27,5 +53,5 @@ function CustomLink({ to, children, ...props }: { to: string; children: string }
         {children}
       </Link>
     </li>
-  )
+  );
 }
