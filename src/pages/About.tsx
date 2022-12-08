@@ -1,5 +1,5 @@
 import './About.css';
-import headshot from "./davy.JPG"
+// import headshot from "./davy.JPG"
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function About() {
@@ -8,7 +8,7 @@ export default function About() {
     <div>
     <h1>About</h1>
     <div className="pic-with-links">
-    <img src= {headshot} alt="" />
+    {/* <img src= {headshot} alt="" /> */}
     <br />
 <div className="social-icons">
 <div className="icon">
