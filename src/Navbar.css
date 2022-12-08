@@ -17,5 +17,9 @@
 
 .football:hover .football-dropdown {
     display: flex;
+    list-style: none;
+    text-align: center;
+}
 
+.football-dropdown:hover {
 }
