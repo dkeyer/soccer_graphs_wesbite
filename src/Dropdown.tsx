@@ -7,6 +7,7 @@ type submenu = {
 
 export const Dropdown = ({
   submenus,
+  // comment
   className,
 }: {
   submenus: submenu[];
