@@ -34,7 +34,6 @@ export default function Navbar() {
         <CustomLink to="/contact">Contact</CustomLink>
       </ul>
       <div className="hamburger">
-        //hamburger
       <Hamburger />
       </div>
     </nav>
