@@ -1,3 +1,13 @@
+.nav {
+  background-color: maroon;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
 @media screen and (min-width: 768px){
 
 * {
