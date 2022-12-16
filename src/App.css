@@ -9,6 +9,7 @@
 }
 
 .hamburger {
+  display: none;
 }
 
 .navbar-links {
