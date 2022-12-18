@@ -2,6 +2,8 @@ import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import { Dropdown } from "./Dropdown";
 import Hamburger from "./pages/Hamburger";
 import "./Navbar.css";
+import { useState } from 'react';
+
 
 const submenuItems = [
   {
@@ -18,7 +20,12 @@ const submenuItems = [
   },
 ];
 
-export default function Navbar() {
+export default function Navbar() {  
+  const [hamburgerOpen, setHamburgerOpen] = useState(false);
+
+    const toggleHamburger = () =>{
+        setHamburgerOpen(!hamburgerOpen)
+    }
   return (
     <nav className="nav">
       <Link to="/" className="site-title">
@@ -33,8 +40,8 @@ export default function Navbar() {
         <CustomLink to="/about">About</CustomLink>
         <CustomLink to="/contact">Contact</CustomLink>
       </ul>
-      <div className="hamburger">
-      <Hamburger />
+      <div className="hamburger" onClick={toggleHamburger}>
+      <Hamburger isOpen={hamburgerOpen}/>
       </div>
     </nav>
   );
