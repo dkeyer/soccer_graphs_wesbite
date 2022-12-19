@@ -21,12 +21,15 @@ const submenuItems = [
 ];
 
 export default function Navbar() {  
+
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
-    const toggleHamburger = () =>{
-        setHamburgerOpen(!hamburgerOpen)
-    }
+  const toggleHamburger = () =>{
+      setHamburgerOpen(!hamburgerOpen)
+  }
+    
   return (
+    <>
     <nav className="nav">
       <Link to="/" className="site-title">
         Sports Graphs
@@ -44,7 +47,35 @@ export default function Navbar() {
       <Hamburger isOpen={hamburgerOpen}/>
       </div>
     </nav>
+    <style jsx>{`
+                
+                {
+                  
+                  .hamburger{
+                      display:fixed;
+                      padding-top: 10px;
+                      margin-left: 10px;
+                      z-index: 6;
+                  }
+              
+                 
+                  .navigation ul{
+                      display: ${hamburgerOpen ? 'inline' : 'none'};
+                      background-color: blue;
+                      height: 100vh;
+                      width: 50vw;
+                      margin-top: 50px;
+                      position: fixed;
+                      
+                  }
+              }
+                
+            `}
+
+    </style>       
+    </>         
   );
+
 }
 
 function CustomLink({
