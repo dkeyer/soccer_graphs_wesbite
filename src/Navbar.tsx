@@ -47,32 +47,17 @@ export default function Navbar() {
       <Hamburger isOpen={hamburgerOpen}/>
       </div>
     </nav>
-    <style jsx>{`
-                
-                {
-                  
-                  .hamburger{
-                      display:fixed;
-                      padding-top: 10px;
-                      margin-left: 10px;
-                      z-index: 6;
-                  }
-              
-                 
-                  .navigation ul{
-                      display: ${hamburgerOpen ? 'inline' : 'none'};
-                      background-color: blue;
-                      height: 100vh;
-                      width: 50vw;
-                      margin-top: 50px;
-                      position: fixed;
-                      
-                  }
-              }
-                
-            `}
+    <style>
+      
+    {`
+    @media screen and (max-width: 768px){
 
-    </style>       
+     .navbar-links{
+      display: ${hamburgerOpen ? 'inline' : 'none'};
+  }
+}
+    `}
+    </style>   
     </>         
   );
 
