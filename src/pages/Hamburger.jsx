@@ -1,6 +1,6 @@
 import "./Hamburger.css";
 
-export default function Hamburger() {
+export default function Hamburger({isOpen}) {
     return (
         <div className="hamburger">
         <div className="burger burger1" />
