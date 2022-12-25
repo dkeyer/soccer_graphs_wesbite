@@ -34,7 +34,7 @@ h1 {
 
 
 .nav li:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: .3s;
 }
 

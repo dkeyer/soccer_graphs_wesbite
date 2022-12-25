@@ -42,6 +42,7 @@ position: absolute
     padding: .25rem;
 }
 
+
 .football-dropdown {
     display: none;
     flex-direction: column;

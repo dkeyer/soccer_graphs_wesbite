@@ -25,7 +25,7 @@ max-width: 100px;
 }
 
 .icon:hover {
-    transform: scale(1.2); 
+    transform: scale(1.1); 
     transition: 0.2s;
 }
 
