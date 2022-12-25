@@ -32,12 +32,6 @@ h1 {
   text-align: center;
 }
 
-
-.nav li:hover {
-  transform: scale(1.1);
-  transition: .3s;
-}
-
 .site-title {
   font-size: 1.5rem;
 }

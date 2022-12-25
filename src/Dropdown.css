@@ -1,4 +1,3 @@
-.dropdown-item:hover {
-background-color: gray;
-align-content: center;
+.dropdown-item a:hover {
+background-color: pink;
 }
