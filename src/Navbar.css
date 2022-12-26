@@ -1,6 +1,6 @@
 .hamburger{
     display:fixed;
-    padding-top: 3px;
+    padding-top: 1.5px;
     margin-left: 10px;
     z-index: 6;
 }
@@ -8,6 +8,15 @@
 .football-dropdown {
     display: none;
 position: absolute
+}
+
+.football-link:after {
+    content: '';
+    border: 5px solid transparent;
+    border-top: 5px solid white;
+    margin-left: 10px;
+    display: inline-block;
+    margin-top: 7px;
 }
 
 .football:hover .football-dropdown {
