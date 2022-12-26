@@ -1,6 +1,6 @@
 .hamburger{
     display:fixed;
-    padding-top: 5px;
+    padding-top: 3px;
     margin-left: 10px;
     z-index: 6;
 }
