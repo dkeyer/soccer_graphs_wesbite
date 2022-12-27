@@ -43,6 +43,15 @@ export default function Navbar() {
         <CustomLink to="/about">About</CustomLink>
         <CustomLink to="/contact">Contact</CustomLink>
       </ul>
+      {/* <ul className="layover-navbar-links">
+        <div className="football">
+          <li className="football-link">Football</li>
+          <Dropdown className="football-dropdown" submenus={submenuItems} />
+        </div>
+        <CustomLink to="/nba">NBA</CustomLink>
+        <CustomLink to="/about">About</CustomLink>
+        <CustomLink to="/contact">Contact</CustomLink>
+      </ul> */}
       <div className="hamburger" onClick={toggleHamburger}>
       <Hamburger isOpen={hamburgerOpen}/>
       </div>
