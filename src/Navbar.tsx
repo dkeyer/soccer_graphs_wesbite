@@ -52,6 +52,7 @@ export default function Navbar() {
         <CustomLink to="/about">About</CustomLink>
         <CustomLink to="/contact">Contact</CustomLink>
       </ul> */}
+      
       <div className="hamburger" onClick={toggleHamburger}>
       <Hamburger isOpen={hamburgerOpen}/>
       </div>
