@@ -23,7 +23,7 @@ const submenuItems = [
 export default function Navbar() {  
 
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
-//
+
   const toggleHamburger = () =>{
       setHamburgerOpen(!hamburgerOpen)
   }
