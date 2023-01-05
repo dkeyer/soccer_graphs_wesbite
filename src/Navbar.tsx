@@ -27,7 +27,7 @@ export default function Navbar() {
   const toggleHamburger = () =>{
       setHamburgerOpen(!hamburgerOpen)
   }
-    
+    //
   return (
     <>
     <nav className="nav">
